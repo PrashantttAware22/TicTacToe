@@ -91,6 +91,7 @@ function showWinner(winner) {
 
 // ResetGame function 
 function resetGame() {
+    box.style.backgroundColor = "#AEDEFC" ;
     turnO = true;
     enableBoxes();
     msgContainer.classList.add("hide");
