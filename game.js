@@ -79,7 +79,7 @@ function enableBoxes() {
     for (let box of boxes) {
         box.disabled = false;
         box.innerText = "";
-        box.backgroundColor = "#AEDEFC" ; 
+        box.style.backgroundColor = "#AEDEFC" ; 
     }
 }
 
@@ -95,6 +95,8 @@ function resetGame() {
     turnO = true;
     enableBoxes();
     msgContainer.classList.add("hide");
+
+    
 }
 
 // Reset game : 
