@@ -94,6 +94,7 @@ function resetGame() {
     turnO = true;
     enableBoxes();
     msgContainer.classList.add("hide");
+    boxes.backgroundColor = "#AEDEFC" ; 
 }
 
 // Reset game : 
