@@ -1,71 +1,83 @@
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-body , html {
-    /* background-color: rgb(180, 60, 60); */
+
+body {
     background-color: #FDEDED;
-    
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
 }
 
 span {
     color: brown;
 }
 
-h1 {
-    color: black;
-    text-align: center;
-    margin-top: 0px;
-    font-size: 3rem;
-}
+/* Message */
 .msgContainer {
     height: 3rem;
 }
+
 #msg {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #452829;
-    font-weight: 600;
 }
+
 .hide {
     display: none;
 }
 
+/* Game board */
 .Gamecontainer {
     display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(3,1fr);
-    gap: 0px 0px;
-    height: 60vmin;
-    width: 60vmin;
-    margin: 0 auto;
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    width: 90vw;
+    max-width: 300px;
+    margin: 1rem auto;
 }
+
+/* Boxes */
 .box {
     background-color: #AEDEFC;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 90px;
+    width: 90px;
+    font-size: 3rem;
     border-radius: 1rem;
     border: none;
-    height: 6rem;
-    width: 6rem;
-    margin-top: 5px;
-    font-size: 3.5rem;
-    box-shadow: 2px 2px 5px black ,
-    -2px -2px 5px black ;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
 }
+
+/* Reset button */
 button {
-    display: block;
-    margin: 10px auto;
-    font-size: 2rem;
-    padding: 0 1rem;
-    border-radius: 0.8rem;
-    text-transform: uppercase;
-    box-shadow: 2px 2px 5px black,
-    -2px -2px 5px black;
-    color: azure;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    border: none;
     background-color: #BF1A1A;
+    color: white;
+    cursor: pointer;
+}
+
+/* Small screens */
+@media (max-width: 400px) {
+    .box {
+        height: 70px;
+        width: 70px;
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
 }
